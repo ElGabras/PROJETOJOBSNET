@@ -1,0 +1,98 @@
+{
+"openapi": "3. 0.0",
+
+"info": {
+    "title": "API projeto JobsNET",
+    "description": "Essa é a api do Projeto JOBSNET",
+    "version" "0.0.1"
+},
+
+"servers": [
+    {
+        "url": "http://localhost:5000",
+        "description": "ambiete de desenvolvimento"
+    }
+],
+
+"paths": {
+    "/register": {
+      "post": {
+       "summary": "Cadastro de candidato",
+       "description": "Rota de cadastro de usuário, recebe: nome, cargo data Est_Civil
+       sexo bairro codade estadp email endereco celular Tel1 cep",
+        "tags": ["candidato"],
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "nome": {
+                           "type": "string"     
+                       },
+                        "cargo": {
+                            "type": "string"
+                        }, 
+                         "data": {
+                             "type":"string"
+                         },   
+                        "Est_Civil": {
+                            "type": "string"
+                        },
+                        "sexo": {
+                            "type":"string"
+                        },
+                        "bairro": {
+                            "type":"string"
+                        },
+                        "cidade": {
+                            "type":"string"
+                        },
+                        "estado": {
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "endereco": {
+                            "type": "string"
+                        },
+                        "celular": {
+                            "type": "string"
+                        },
+                        "Tel1": {
+                            "type":"string"
+                        },
+                        "cep": {
+                            "type": "string"
+                        }
+                     }   
+                 },
+                 "examples": {
+                     "eu mesmo": {
+                         "value": {
+                             "nome": "Gabriel Freitas de Oliveira",
+                             "cargo": "DevFULLSTACK",
+                             "data": "04/05/1998",
+                             "Est_Civil": "Solteiro",
+                             "sexo": "Masculino",
+                             "bairro": "Jd Alamos",
+                             "cidade": "São Paulo",
+                             "estado": "SP",
+                             "email": "sosgabrielfreitas12@hotmail.com",
+                             "endereco": "Rua Dr Achilles S Guimarães",
+                             "celular": "11984654765",
+                             "Tel1": "(00)0000-0000",
+                             "cep": "00000-000"
+                         }
+                     }
+                 }     
+
+
+
+
+
+
+
+
+
+
+

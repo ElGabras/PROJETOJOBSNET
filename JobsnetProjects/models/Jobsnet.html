@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="Stylejbsnet.css">
+    <title>JobsNET</title>
+</head>
+
+<body>
+    <header>
+          <ul>
+             <li>
+                 <a target="_blank" href="https://github.com/ElGabras/gama-no-github">Github</a>
+             </li>
+             <li>
+                <a target="_blank" href="mailto:sosgabrielfreitas12@hotmail.com">Email</a>
+             </li>
+             <li>
+                <a target="_blank" href="https://wa.me/11999999999">Whatsapp </a>
+             </li>
+          </ul>
+            <h1>JobsNET</h1>
+    </header>
+    <main>
+      <section class="container"> 
+         <div>
+            <img src="./pexels-yan-krukov-7793691.jpg" alt="Imagem do Grupo" width="420" height="420"
+            style="float: left;margin-left: 15px;margin-right: 20px;">
+         </div>
+         <div class="oportunidade">
+            <h3>Oportunidade de <br>
+               Candidatura na JobsNET</h3>
+            <p> A Jobsnet é uma empresa fundada em 2021 com grandes líderes que inovam o mercado de trabalho,
+               nosso site está repleto de oportunidades para que os candidatos, de diversos setores, consigam
+               ingressar no mercado.<br>
+               Com a nossa plataforma de candidatura, ficou ainda mais fácil conquistar o seu tão sonhado
+               emprego, nossa missão é auxilia-los em sua jornada profissional de forma rápida, eficaz e
+               efetiva.<br> 
+               Não perca tempo, faça seu cadastro em nossa plataforma e fique atento que sua oportunidade vem vindo logo ai, venha para Jobsnet!</p>
+         </div>
+         <div> 
+         <h2>Formulário de Cadastro</h2>   
+         </div>
+         <div class="form">
+            <h3>DADOS PESSOAIS</h3>
+         </div>
+         <form action="">
+            <div>
+               <label for="Nome">NOME COMPLETO:</label>
+               <input type="text" id="nome" name="nome" placeholder="Nome" required> 
+            </div>   
+            <div>
+               <label for="Cargo">Cargo Pretendido:</label>
+               <input type="text" id="cargo" name="cargo" placeholder="Cargo" required>
+            </div>
+            <div>
+               <label for="DataNascimento">Data de Nascimento:</label>
+               <input type="date" id="data" name="data"  required>
+            </div>
+            <div>
+               <label for="EstadoCivil" id="Est_Civil">Estado Civil:</label>
+                 <select>
+                     <option>Solteiro(a)  </option>
+                     <option >Casado(a)   </option>
+                     <option>Divorciado(a)</option>
+                     <option>Viúvo(a)     </option>
+                 </select>                   
+            </div>  
+            <div>
+               <label for="Sexo" id="sexo">Sexo:</label>
+               <select>
+                  <option>Masculino</option>
+                  <option>Feminino</option>
+                  <option>Outros</option>
+                  <option>Não Informar</option>
+               </select>
+            </div>
+            <div>
+               <label for="cep">CEP:</label>
+               <input type="text" id="cep"  placeholder="Ex.00000-000" required>
+            </div>
+            <div>
+               <label for="endereco">Endereço:</label>
+               <input type="text" id="endereco" name="endereco" required> 
+            </div>  
+            <div>
+               <label for="Número">Número:</label>
+               <input type="number" id="Número" name="Número" required>
+            </div>    
+            <div>
+               <label for="bairro">Bairro:</label>
+               <input type="text" id="bairro" name="bairro" required>
+            </div> 
+            <div>
+               <label for="cidade">Cidade:</label>
+               <input type="text" id="cidade" name="cidade" required>
+            </div> 
+            <div>
+               <label for="estado">Estado:</label>
+               <input type="text" id="estado" name="estado" required>
+            </div> 
+            <div>
+               <label for="Email">E-mail:</label>
+               <input type="text" id="Email" name="Email" required>
+            </div>
+            <div>
+               <label for="Celular">Celular</label>
+               <input type="number" id="Celular" name="Celular" required>
+            </div>
+            <div>
+               <label for="Tel1">Telefone Fixo 1:</label>
+               <input type="number" id="Tel1" name="Tel1" required>
+            </div>
+            <div>
+               <label for="Tel2">Telefone Fixo 2:</label>
+               <input type="number" id="Tel2" name="Tel2">
+            </div>
+          <h2>Documentos</h2>
+          <div>
+             <label for="ID">Identidade</label>
+             <input type="number" for="ID" id="ID" name="Identidade">
+          </div>
+          <div>
+             <label for="CPF">CPF:</label>
+             <input type="text" for="CPF" id="cpf_digitado" name="CPF"  placeholder="Ex 00000000000" 
+             required>
+             <button type="button" class="btn btn-info" onclick="validacao()">Validar</button>
+             <div id="success" class="alert alert-success" style="display: none;" role="alert">
+               <strong>Oba !</strong> Seu CPF é válido
+            </div>
+            <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+               <strong>Ops!</strong> Seu CPF não é válido
+          </div>
+          <div>
+             <h3>Habilitação<h3>
+          <div class="nao_habilitado">
+            <input type="checkbox" id="nao_habilitado" nome=habilitacao>
+            <label for="nao_habilitado">Não possui</label>
+          </div>
+          <div>
+            <input type="checkbox" id="CategoriaA" nome=habilitacao>
+            <label for="nao_habilitado">Categoria A</label>
+          </div>
+          <div>
+            <input type="checkbox" id="CategoriaB" nome=habilitacao>
+            <label for="nao_habilitado">Categoria B</label>
+          </div>
+          <div>
+            <input type="checkbox" id="CategoriaC" nome=habilitacao>
+            <label for="nao_habilitado">Categoria C</label>
+          </div>
+          <div>
+            <input type="checkbox" id="CategoriaD" nome=habilitacao>
+            <label for="nao_habilitado">Categoria D</label>
+          </div>
+          <div>
+            <input type="checkbox" id="CategoriaE" nome=habilitacao>
+            <label for="nao_habilitado">Categoria E</label>
+          </div>
+      <button type="submit" id="submit-btn">
+         <i style="margin-right: 5px;"></i>
+         Enviar
+      </button> 
+         </form> 
+      </section>
+    </main>    
+</body>
+
+<script src="./script.js"></script>
+
+</html>
